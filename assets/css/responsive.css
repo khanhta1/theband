@@ -1,0 +1,131 @@
+/* Mobile */
+@media (max-width: 46.1875em)
+{
+    #header
+    {
+        overflow: hidden; /* ẩn đi những thằng con*/
+    }
+    #header #navigation {
+        display: block;
+    }
+    #navigation > li
+    {
+        display: block;
+    }
+    #navigation > li:first-child
+    {
+        display: inline-block;
+        /* vì cho thẻ #nav with = 100 % do đặc tính của overflow hidden nhưng ta chỉ muốn home thôi vì ở trên sau sẽ thêm 1 số mục nên k nên để block */
+    }
+    #navigation .subnav
+    {
+        position: initial;
+        background:#ccc;
+    }
+    #navigation .subnav a
+    {
+        color: #fff;
+        /* padding: 1px 24px; ngón tay muốn tương tác tối thiểu phải có độ rộng chiều cao nhất định */
+        color:#000;
+    }
+    #navigation li a
+    {
+        padding: 1px 24px; /* ngón tay muốn tương tác tối thiểu phải có độ rộng chiều cao nhất định */
+    }
+    #content .content-section
+    {
+        padding: 64px 0 112px;
+        width: 800px;
+        /*  có thể hiểu là khi kích thước lớn hơn 800 thì nó sẽ kéo width về 800 px */
+        /*  còn witdh = 100% là để xét khi nào độ rộng < 800px thì sẽ ưu tiên xét theo width = 100 % px nó sẽ kéo 800 xuống = 100% */
+        
+        width: 100%;
+        padding-left: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 16px;
+    }
+    #mobile-menu
+    {
+    position: absolute;
+    top:0;
+    right: 0;
+    display: block;
+    }
+
+    #header .searchbtn
+    {
+        display: none;
+    }
+    #navigation li a 
+{
+     
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+.s-col-full
+{
+    width: 100%;
+}
+.contact-form {
+  
+    margin-top: 32px;
+}
+#content .member-img
+{
+    width: 60%;
+}
+.s-mt-8
+{
+    margin-top: 8px !important;
+}
+
+}
+
+/* PC */
+@media (min-width: 64em)
+{
+
+}
+/* table */
+@media (min-width: 46.25em) and (max-width: 63.9375em)
+{
+    #content .content-section
+    {
+        padding: 64px 0 112px;
+        width: 800px;
+        /*  có thể hiểu là khi kích thước lớn hơn 800 thì nó sẽ kéo width về 800 px */
+        /*  còn witdh = 100% là để xét khi nào độ rộng < 800px thì sẽ ưu tiên xét theo width = 100 % px nó sẽ kéo 800 xuống = 100% */
+        
+        width: 100%;
+        padding-left: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 16px;
+    }
+}
+/* tablet & mobile */
+@media (max-width: 63.9375em)
+{
+    .btn{
+        padding: 15px 16px;
+    }
+    .contact-form .form-control {
+        padding: 15px;
+      
+    }
+    #footer .social {
+        font-size: 48px;
+       
+    }
+    #footer .social a
+    {
+        margin: 0 8px;
+    }
+    #footer .coppyright a {
+       padding: 12px 0;
+       display: inline-block;
+    }
+}
